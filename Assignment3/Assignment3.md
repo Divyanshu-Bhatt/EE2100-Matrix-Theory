@@ -404,15 +404,15 @@ Thus, $\mathbf{u_4}$ isn't a basis vector, since it is redundant. $\mathbf{B}=\s
 $c)$ The signal representation of the basis vectors calculated above is:
 
 <p align="center">
-     <img src="https://github.com/Divyanshu-Bhatt/MT/blob/main/images/signal1.svg" width="300"/>
+     <img src="https://github.com/Divyanshu-Bhatt/EE2100-Matrix-Theory/blob/main/Assignment3/images/signal1.svg" width="300"/>
 </p>
 
 <p align="center">
-     <img src="https://github.com/Divyanshu-Bhatt/MT/blob/main/images/signal2.svg" width="300"/>
+     <img src="https://github.com/Divyanshu-Bhatt/EE2100-Matrix-Theory/blob/main/Assignment3/images/signal2.svg" width="300"/>
 </p>
 
 <p align="center">
-     <img src="https://github.com/Divyanshu-Bhatt/MT/blob/main/images/signal3.svg" width="300"/>
+     <img src="https://github.com/Divyanshu-Bhatt/EE2100-Matrix-Theory/blob/main/Assignment3/images/signal3.svg" width="300"/>
 </p>
 
 $d)$ In general, we expect a different basis due to a different order. However, in this case, the basis obtained will be the same. The only difference is when we apply the algorithm in this order, we get $\mathbf{u_3}$ as the zero vector instead of $\mathbf{u_4}$ and $\mathbf{u_1}$, $\mathbf{u_2}$, are obatined in the opposite order. Thus, we have: 

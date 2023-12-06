@@ -6,7 +6,7 @@ The following document contains the solutions to the theory-based questions for 
 
 ## Question 1
 
-$\underline{\textbf{NOTE:}}$ The property mentioned in the question holds only for real skew-symmetric matrices and we will show the proof for the same. If we wanted to prove this property for complex matrices, then $\mathbf{A}$ would have to be a skew-hermitian matrix. The structure of the proof would remain the same in both cases. 
+$\underline{\textbf{NOTE:}}$ The property mentioned in the question holds only for real, skew-symmetric matrices and we will show the proof for the same. If we wanted to prove this property for complex matrices, then $\mathbf{A}$ would have to be a skew-hermitian matrix. The structure of the proof would remain the same in both cases. 
 
 Given $\mathbf{A}$ is a skew-symmetric matrix $\implies \mathbf{A}^{T} = - \mathbf{A}$. Now,
 
@@ -27,13 +27,13 @@ $$
 \end{align*}
 $$
 
-The final equation indicates that $\lambda^2$ must take a negative value (since $\lVert \mathbf{Ax} \rVert^2_2 \over \lVert \mathbf{x} \rVert^2_2$ is always positive) which is only possible if $\lambda$ is purely imaginary. Thus the eigenvalues of $\,\mathbf{A}$ are purely imaginary.
+The final equation indicates that $\lambda^2$ must take a negative value (since $\lVert \mathbf{Ax} \rVert^2_2 \over \lVert \mathbf{x} \rVert^2_2$ is always positive) which is only possible if $\lambda$ is purely imaginary. Thus the eigenvalues of $\ \mathbf{A}$ are purely imaginary.
 
 ## Question 2
 
 Given $\mathbf{A} \in \mathbb{R^{m\times n}}$, whose column vectors are linearly independent, we want to prove that the eigen values of $\mathbf{A^T A}$ are purely real and positive.
 
-For this, let $\lambda$ denote the eigen values and $\mathbf{x}$ denote the respective eigen vector of matrix $\mathbf{A^T A}$. Hence,
+For this, let $\lambda$ denote the eigen values and $\mathbf{x}$ denote the respective eigen vectors of matrix $\mathbf{A^T A}$. Hence,
 
 $$
 \begin{align*}
@@ -70,7 +70,7 @@ $$
 
 The eigen values of $\mathbf{A_1}$ are given by the roots of the characteristic polynomial, i.e., $\lambda_1 = 1$, $\lambda_2 = \frac{-1 + i\sqrt{3}}{2}$ and $\lambda_3 = \frac{-1 - i\sqrt{3}}{2}$
 
-The eigen vectors corresponding to $\lambda_1 = 1$ is given by
+The eigen vector corresponding to $\lambda_1 = 1$ is given by
 
 $$
 \begin{align*}
@@ -79,9 +79,9 @@ $$
 \end{align*}
 $$
 
-Solving above equation, we get $\mathbf{x} = t\left[1 \quad 1 \quad 1\right]^T$
+On solving the equation, we get $\mathbf{x} = t\left[1 \quad 1 \quad 1\right]^T$
 
-The eigen vectors corresponding to $\lambda_2 = \frac{-1 + i\sqrt{3}}{2}$ is given by
+The eigen vector corresponding to $\lambda_2 = \frac{-1 + i\sqrt{3}}{2}$ is given by
 
 $$
 \begin{align*}
@@ -92,7 +92,7 @@ $$
 
 Solution of above equation is given by $\mathbf{x} = t\left[1 \quad \frac{-1 + i\sqrt{3}}{2} \quad \frac{-1 - i\sqrt{3}}{2} \right]^T$
 
-The eigen vectors corresponding to $\lambda_3 = \frac{-1 - i\sqrt{3}}{2}$ is given by
+The eigen vector corresponding to $\lambda_3 = \frac{-1 - i\sqrt{3}}{2}$ is given by
 
 $$
 \begin{align*}
@@ -127,26 +127,26 @@ p(\lambda) &= \det(\mathbf{A_2} - \lambda \mathbf{I}) \\
 &= \det \begin{bmatrix} 1 - \lambda&1&1 \\\ 1&1 - \lambda&1 \\\ 1&1&1 - \lambda \end{bmatrix} \\
 &= (1 - \lambda) \det \begin{bmatrix} 1 - \lambda&1 \\\ 1&1 - \lambda \end{bmatrix} - \det \begin{bmatrix} 1&1 \\\ 1&1 - \lambda \end{bmatrix} + \det \begin{bmatrix} 1&1 - \lambda \\\ 1&1 \end{bmatrix} \\
 &= (1 - \lambda) (\lambda^2 - 2\lambda) + \lambda + \lambda\\
-&= \lambda^2 - 2\lambda + \lambda^3 - 2\lambda^2 + \lambda + \lambda \\
-&= \lambda^3 - \lambda^2 \\
-&= \lambda^2(\lambda - 1)
+&= \lambda^2 - 2\lambda - \lambda^3 + 2\lambda^2 + \lambda + \lambda \\
+&= -\lambda^3 +3 \lambda^2 \\
+&= -\lambda^2(\lambda - 3)
 \end{align*}
 $$
 
-The eigen values of $\mathbf{A_2}$ are given by the roots of the characteristic polynomial, i.e., $\lambda_1 = 1$, $\lambda_2 = \lambda_3 = 0$
+The eigen values of $\mathbf{A_2}$ are given by the roots of the characteristic polynomial, i.e., $\lambda_1 = 3$, $\lambda_2 = \lambda_3 = 0$
 
-The eigen vectors corresponding to $\lambda_1 = 1$ is given by
+The eigen vector corresponding to $\lambda_1 = 3$ is given by
 
 $$
 \begin{align*}
 (\mathbf{A_2} - \lambda_1 \mathbf{I})\mathbf{x} &= \mathbf{0} \\
-\begin{bmatrix} 0&1&1 \\\ 1&0&1 \\\ 1&1&0 \end{bmatrix} \mathbf{x} &= \mathbf{0} \\
+\begin{bmatrix} -2&1&1 \\\ 1&-2&1 \\\ 1&1&-2 \end{bmatrix} \mathbf{x} &= \mathbf{0} \\
 \end{align*}
 $$
 
-Solving above equation, we get $\mathbf{x}$ = \left[\right]^T$.
+Solving above equation, we get $\mathbf{x} = t\left[1 \quad 1\quad 1\right]^T$.
 
-The eigen vectors corresponding to $\lambda_2 = \lambda_3 = 0$ is given by
+The eigen vector corresponding to $\lambda_2 = \lambda_3 = 0$ is given by
 
 $$
 \begin{align*}
@@ -161,13 +161,14 @@ to summarize, the eigen values and eigen vectors of $\mathbf{A_2}$ are given by
 
 $$
 \begin{align*}
-\lambda_1 &= 1, \mathbf{x_1} = \begin{bmatrix} 1 \\\ 1 \\\ 1 \end{bmatrix} \\
+\lambda_1 &= 3, \mathbf{x_1} = \begin{bmatrix} 1 \\\ 1 \\\ 1 \end{bmatrix} \\
 \lambda_2 &= \lambda_3 = 0, \mathbf{x_2} = \begin{bmatrix} 1 \\\ -1 \\\ 0 \end{bmatrix}, \mathbf{x_3} = \begin{bmatrix} 1 \\\ 0 \\\ -1 \end{bmatrix}
 \end{align*}
 $$
 
 ## Question 4
-The given proposition is false. We will prove this by giving a counter example. Consider the $3 \times 3$ matrix $\mathbf{A}$, such that
+Proof via counter-example:
+Consider the $3 \times 3$ matrix $\mathbf{A}$, such that
 
 $$
 \mathbf{A}=\begin{bmatrix}
@@ -345,7 +346,7 @@ $$
 \end{align*}
 $$
 
-Thus, the eigenvectors corresponding to the eigenvalue $\lambda = 2$ is:
+Thus, the eigenvectors corresponding to the eigenvalue $\lambda = 2$ are:
 
 $$
 \mathbf{x}={1\over \sqrt{3}}\begin{bmatrix}
@@ -355,12 +356,12 @@ $$
 \end{bmatrix}
 $$
 
-As we can see from the above example that the eigenvectors are independent of each other but the eigenvalues are not distinct. Thus, the given proposition is false.
+Clearly, the eigenvectors are independent of each other but the eigenvalues are not distinct. Thus, the given proposition is false.
 
 The converse of the above proposition is true i.e if the eigenvalues are distinct then the eigenvectors are independent of each other.
 
 ## Question 5
-Given matrix as follows:
+The matrix given is as follows:
 
 $$
 \mathbf{A}=\begin{bmatrix}
@@ -370,7 +371,7 @@ $$
 			\end{bmatrix}
 $$
 
-As it is a 3 by 3 matrix, we use $\mathbf{I}_3$ as the identity matrix. This gives us the characteristic equaiton:
+As it is a 3 by 3 matrix, we use $\mathbf{I}_3$ as the identity matrix. This gives us the characteristic equation:
 
 $$
 \det(\mathbf{A}-\lambda\mathbf{I}_3) = 0 \\
@@ -409,7 +410,7 @@ $$
 \begin{bmatrix} v_1\\\v_2\\\v_3\end{bmatrix} = \begin{bmatrix} 0\\\0\\\0\end{bmatrix}
 $$
 
-On swapping the last 2 rows and performing Row Substitutitons, we get:
+On swapping the last 2 rows and performing Row Substituttions, we get:
 
 $$
 \begin{align*}
@@ -419,10 +420,10 @@ $$
 \end{align*}
 $$
 
-Taking $\alpha = 1$, we get the eigen vector as $\mathbf{v} = \left[1 \quad 1 \quad 1\right]^T$.
+Taking $\alpha = 1$, we get the eigenvector as $\mathbf{v} = \left[1 \quad 1 \quad 1\right]^T$.
 
 As the solution obtained is only one parametric form, the geometric multiplicity of the eigenvalue 3 is 1.
-In order to span the entire $\mathbb{R}^3$, we need 2 more linearly independent vectors($\mathbf{u}$ and $\mathbf{w}$). We can obtain these by using the generalized eigenvectors approach. We have: 
+In order to span the entire space $\mathbb{R}^3$, we need 2 more linearly independent vectors($\mathbf{u}$ and $\mathbf{w}$). We can obtain these by using the generalized eigenvectors approach. We have: 
 
 $$
 \left(\mathbf{A}-\lambda\mathbf{I}_3\right)\mathbf{u} = \mathbf{v} \\
@@ -433,7 +434,7 @@ $$
 			\end{bmatrix}\begin{bmatrix} u_1\\\u_2\\\u_3\end{bmatrix} =\begin{bmatrix}1\\\1\\\1\end{bmatrix} 
 $$
 
-On swapping the last 2 rows and performing Row Substitutitons, we get:
+On swapping the last 2 rows and performing Row Substituttions, we get:
 
 $$
 \begin{bmatrix} 3 &-2 & -1 \\\ 0  & 1  & -1 \\\ 0  & 0  & 0\end{bmatrix}
@@ -442,7 +443,7 @@ $$
 \implies \mathbf{u} = \begin{bmatrix}\alpha + 1\\\ \alpha + 1\\\ \alpha \end{bmatrix} 
 $$
 
-Taking $\alpha = -1$, we get the eigen vector as $\mathbf{u} = \left[0 \quad 0 \quad -1\right]^T$.
+Taking $\alpha = -1$, we get the eigenvector as $\mathbf{u} = \left[0 \quad 0 \quad -1\right]^T$.
 
 Lastly, we have:
 
@@ -453,7 +454,7 @@ $$
 \begin{bmatrix} 0\\\0\\\ -1\end{bmatrix}
 $$
 
-On swapping the last 2 rows and performing Row Substitutitons, we get:
+On swapping the last 2 rows and performing Row Substitutions, we get:
 
 $$
 \begin{bmatrix} 3  & -2 & -1 \\\ 0  & 1  & -1 \\\ 0  & 0  & 0\end{bmatrix}
@@ -462,7 +463,7 @@ $$
 \implies \mathbf{w} = \begin{bmatrix}\alpha - 2 \\\ \alpha - 3\\\ \alpha\end{bmatrix}
 $$
 
-Taking $\alpha = 2$, we get the eigen vector as $\mathbf{u} = \left[0 \quad -1 \quad 2\right]^T$.
+Taking $\alpha = 2$, we get the eigenvector as $\mathbf{u} = \left[0 \quad -1 \quad 2\right]^T$.
 
 Thus, the generalized eigen vectors corresponding to $\mathbf{A}$ are 
 
@@ -472,4 +473,4 @@ $$
 \begin{bmatrix}0 \\\ -1 \\\ 2\end{bmatrix}
 $$
 
-NOTE: The values of $\alpha$ were chosen randomly in the above solution. The eigen vectors obtained will be linearly independent $\forall \alpha \in \mathbb{R}$ i.e.,  the triplet of eigen vectors obtained will always span entire $\mathbb{R}^3$. 
+NOTE: The values of $\alpha$ were chosen randomly in the above solution. The eigenvectors obtained will be linearly independent $\forall \alpha \in \mathbb{R}$ i.e.,  the triplet of eigenvectors obtained will always span entire space $\mathbb{R}^3$. 
